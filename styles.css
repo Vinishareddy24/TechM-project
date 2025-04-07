@@ -1,0 +1,80 @@
+/* Background and font */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #e1bee7);
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styling */
+.dashboard-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease;
+}
+
+/* Header */
+.dashboard-header {
+  font-size: 28px;
+  text-align: center;
+  color: #6a1b9a;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* Meal items */
+.meal-item {
+  background: linear-gradient(to right, #fce4ec, #f3e5f5);
+  border-left: 5px solid #ec407a;
+  padding: 20px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.meal-item:hover {
+  transform: translateY(-3px);
+}
+
+/* Meal title */
+.meal-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ad1457;
+  display: flex;
+  align-items: center;
+}
+
+.meal-title::before {
+  content: "🍽️";
+  margin-right: 8px;
+}
+
+/* Calories info */
+.meal-calories {
+  font-size: 14px;
+  color: #4e4e4e;
+  margin-top: 5px;
+}
+
+/* Total calories */
+.total-calories {
+  background: linear-gradient(to right, #c8e6c9, #a5d6a7);
+  color: #2e7d32;
+  padding: 16px;
+  font-size: 18px;
+  border-left: 5px solid #388e3c;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
